@@ -2,7 +2,7 @@
 
 .infos-bar {
     padding: 16px 24px;
-    background-color: variables.$bege2;
+    background-color: variables.$nude;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -14,12 +14,12 @@
 
         &__item {
             font-size: 14px;
-            color: variables.$textColor1;
+            color: variables.$textColor2;
 
             b {
                 font-size: 18px;
                 display: block;
-                color: variables.$textColor1;
+                color: variables.$textColor2;
             }
         }
     }

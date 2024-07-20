@@ -2,39 +2,67 @@
 
 .party {
     padding: 80px 0;
+    color: variables.$textColor2;
     
     &--festa {
-        background-image: linear-gradient( variables.$bege2, variables.$bege1);
-        color: variables.$textColor1;
-    }
+        background-image: linear-gradient( variables.$areia, variables.$nude);
+        }
 
+        
     &--salgadinhos {
-        background-image: linear-gradient( variables.$bege1, variables.$bege2);
+        background-image: linear-gradient( variables.$nude, variables.$tifany);
+        }
+
+    &--bebidas {
+        background-image: linear-gradient( variables.$tifany, variables.$nude);
+        }
+
+    &--docinhos {
+            background-image: linear-gradient( variables.$nude, variables.$tifany);
+            }
+
+    &--img-left {
+        .container {
+            flex-direction: row-reverse;
+        }
     }
 
 
     .container {
         display: flex;
+        gap: 40px;
     }
 
     &__img {
         max-width: 360px;
+        border-radius: 10px;
     }
 
     &__details {
-        margin-right: 40px;
         &__title {
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 16px;
-            color:white;
+            
+            &__festa {
+                color: variables.$textColor1;
+            }
             }
 
         &__description {
             font-size: 16px;
             line-height: 22px;
-            color: white;
+            font-family: "Montserrat", sans-serif;
+            line-height: 25px;
+            
+            &__festa {
+                color: variables.$textColor1;
+                font-family: "Montserrat", sans-serif;
+                line-height: 25px;
+            }
         }
+
+        
     }
 
     @media (max-width: 640px) {

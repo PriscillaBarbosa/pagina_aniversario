@@ -7,14 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__eu" src="./images/eu.png" alt="banner">
+            <img class="hero__eu" src="./images/eu.png" alt="eu">
             <p class="hero__text">
-                O meu aniversário esta chegando em 10d 12h 20m 15s
+                Meu dia preferido do ano está chegando em <span id="contador"></span>
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -37,55 +41,59 @@
             </div>
         </div>
     </header>
+
     <section class="party party--festa">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
             <div class="party__details">
-                <h2 class="party__details__title">Festa</h2>
-                <p class="party__details__description">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, quos. Laboriosam, eos numquam ex commodi ipsam id enim nulla minima cupiditate, ab repellendus aliquam reprehenderit accusamus similique itaque quidem ut!
+                <h2 class="party__details__title__festa">Queridos amigos e familiares,</h2>
+                <p class="party__details__description__festa">
+                É com muita alegria que convidamos vocês para celebrar conosco o meu aniversário! 
+                Venham compartilhar risadas, memórias e brindar à vida e às quatro décadas de experiências incríveis. Teremos música, boa comida e, claro, um bolo delicioso!
+                Confirme sua presença até 14/01/2025 para que possamos preparar tudo com carinho. Mal podemos esperar para comemorar com vocês!
+                Até lá!🥳
                 </p>
             </div>
             <img class="party__img" src="./images/festa.jpg" alt="festa">
         </div>
     </section>
 
-        <section class="party party--salgadinhos">
-        <div class="container">
+        <section class="party party--salgadinhos party--img-left">
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
             <div class="party__details">
-                <h2 class="party__details__title">Bebidas</h2>
+                <h2 class="party__details__title">Teremos vários salgadinhos para petiscarmos</h2>
                 <p class="party__details__description">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, quos. Laboriosam, eos numquam ex commodi ipsam id enim nulla minima cupiditate, ab repellendus aliquam reprehenderit accusamus similique itaque quidem ut!
+                    Teremos um menu de salgadinhos deliciosos que agradaram a todos os convidados: coxinhas de frango, bolinhos de queijo, kibe frito, empadinhas, bolinho de bacalhau, pastéis, mini quiches, bolinho de aipim com carne-seca, isca de frango e peixe, pão de queijo.
                 </p>
             </div>
-            <img class="party__img" src="./images/bebidas.jpg" alt="bebidas">
+            <img class="party__img" src="./images/salgadinhos.jpg" alt="bebidas">
         </div>
     </section>
 
     <section class="party party--bebidas">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
             <div class="party__details">
                 <h2 class="party__details__title">Bebidas</h2>
                 <p class="party__details__description">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, quos. Laboriosam, eos numquam ex commodi ipsam id enim nulla minima cupiditate, ab repellendus aliquam reprehenderit accusamus similique itaque quidem ut!
+                    Bebidinhas não podem faltar e por isso teremos: refrigerantes e sucos variados, água com gás e sem gás, chás gelados e coquetéis não alcoólicos; Para a turma da cachaça teremos: Cerveja, caipirinha, margaritas e aperol spritz.
                 </p>
             </div>
             <img class="party__img" src="./images/bebidas.jpg" alt="bebidas">
         </div>
     </section>
 
-    <section class="party party--docinhos">
-        <div class="container">
+    <section class="party party--docinhos party--img-left">
+        <div class="container" data-aos="fade-up" data-aos-duration="3000">
             <div class="party__details">
-                <h2 class="party__details__title">Bebidas</h2>
+                <h2 class="party__details__title">E para adoçar...</h2>
                 <p class="party__details__description">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, quos. Laboriosam, eos numquam ex commodi ipsam id enim nulla minima cupiditate, ab repellendus aliquam reprehenderit accusamus similique itaque quidem ut!
+                    Brigadeiro, beijinho, docinho de leite ninho, olho de sogra, mini churros e torta de limão.
                 </p>
             </div>
-            <img class="party__img" src="./images/bebidas.jpg" alt="bebidas">
+            <img class="party__img" src="./images/docinhos.jpg" alt="bebidas">
         </div>
     </section>
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

@@ -3,11 +3,11 @@
 .hero {
     padding-top: 64px;
     padding-bottom: 100px;
-    background-image: url(../images/banner2.jpg);
+    background-image: url(../images/bright-balloons-with-party-scene.jpg);
     background-repeat: no-repeat; 
     background-size: cover;
     position: relative;
-    color: variables.$bege2;
+    color: variables.$textColor1;
 
     .container {
         position: relative;
@@ -21,14 +21,14 @@
         height: 100%;
         background-color: variables.$opacidade;
         content: '';
-        opacity: 0.3;
+        opacity: 0.6;
 
     }
 
     &__text {
         margin-top: 64px;
         margin-bottom: 64px;
-        font-size: 30px;
+        font-size: 28px;
         line-height: 56px;
         font-weight: 700;
         text-align: center;
