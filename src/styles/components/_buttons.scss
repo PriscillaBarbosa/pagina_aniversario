@@ -1,0 +1,32 @@
+@use '../variables';
+
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    
+    &--primary {
+        color: variables.$bege2;
+        background-color: variables.$textColor1;
+        border-radius: 10px;
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+
+        &--primary {
+            margin: 5px;
+        }
+        
+    }
+}
